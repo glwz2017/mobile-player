@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>player</title>
+    <link rel="stylesheet" href="css/jquery-mobile.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!--主页面开始1-->
+<div data-role="page" id="sing-class" data-theme="a">
+    <!-- 头部-->
+    <div data-role="header" data-theme="f">
+        <h2>请选择您喜欢的音乐类型</h2>
+    </div>
+    <!-- 主体-->
+    <div data-role="content" class="main">
+        <div class="banner-pic">
+            <img src="img/11.jpg" alt=""/>
+        </div>
+        <br/>
+        <ul data-role="listview" data-theme="a" class="sing-list" style="margin: 0 auto">
+            <li style="border-radius: 15px"><a href="#singer-list">中国风</a></li>
+            <li><a href="#singer-list">怀旧中国风</a></li>
+            <li><a href="#singer-list">那些伤感的歌</a></li>
+            <li style="border-radius: 15px"><a href="http://www.xiami.com/chart?spm=a1z1s.6843761.1110925385.2.TzU9zr">个性化推荐</a></li>
+        </ul>
+    </div>
+</div>
+<!--主界面结束-->
+<!--歌手列表2开始-->
+<div data-role="page" id="singer-list" data-theme="a">
+    <!-- 头部-->
+    <div data-role="header">
+        <a href="#" data-rel="back">返回</a>
+        <h2>歌手列表</h2>
+    </div>
+    <!-- 主体-->
+    <div data-role="content">
+        <!-- 歌手列表-->
+        <ul data-role="listview" >
+            <li><a href="#player-music"><img src="img/01.jpg" alt=""/><h2>刘德华</h2><p>香港著名歌手</p></a></li>
+            <li><a href="#player-music"><img src="img/02.jpg" alt=""/><h2>王菲</h2><p>华宇月坛天后</p></a></li>
+            <li><a href="#player-music"><img src="img/03.jpg" alt=""/><h2>汪峰</h2><p>大陆音乐人</p></a></li>
+            <li><a href="#player-music"><img src="img/04.jpg" alt=""/><h2>周杰伦</h2><p>台湾歌手</p></a></li>
+            <li><a href="#player-music"><img src="img/05.jpg" alt=""/><h2>陈奕迅</h2><p>香港著名歌手</p></a></li>
+            <li><a href="#player-music"><img src="img/06.jpg" alt=""/><h2>胡歌</h2><p>影,视，歌三栖演员</p></a></li>
+        </ul>
+    </div>
+    <!-- 底部-->
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#sing-class">返回</a></li>
+                <li><a href="#sing-class">首页</a></li>
+                <li><a href="" class="close">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--歌手列表2结束-->
+
+<!--播放列表3-->
+<div data-role="page" id="player-music" data-theme="a">
+    <!-- 头部-->
+    <div data-role="header">
+        <a href="#singer-list">返回</a>
+        <h2>歌曲名称</h2>
+    </div>
+    <!-- 主体-->
+    <div data-role="content">
+        <div class="song-pic">
+            <img src="img/12.jpg" alt="" style="width:100%"/>
+        </div>
+           <ul data-role="listview" class="sings">
+               <li><a href="">简单爱</a></li>
+               <li><a href="">好久不见</a></li>
+               <li><a href="">大桥上</a></li>
+               <li><a href="">红豆</a></li>
+               <li><a href="">六月的雨</a></li>
+               <li><a href="">金鱼和木鱼</a></li>
+           </ul>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <!-- 底部-->
+    <div data-role="footer">
+        <audio  src=""></audio>
+        <div data-role="navbar">
+            <ul>
+                <li class="up-sing"><a >上一曲</a></li>
+                <li class="sings-play"><a>播放</a></li>
+                <li class="next-sing"><a >下一曲</a></li>
+                <li class="others"><a>随便听听</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-mobile.js"></script>
+<script src="js/mobile-player.js"></script>
+</body>
+</html>
